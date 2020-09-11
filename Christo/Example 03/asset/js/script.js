@@ -42,6 +42,7 @@ function keyUpValidation(fieldId, pattern) {
     } else {
         fieldId.style.border = invalid;
     }
+
 }
 
 function btnResetMC() {
