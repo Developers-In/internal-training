@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
 <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 
 <section class="pricing py-5 bg-white">
     <div class="container">
@@ -21,78 +20,185 @@
             <!-- Free Tier -->
             <div class="col-lg-4 bg-light">
                 <div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
+                    <div class="card-body img-thumbnail">
                         <div class="row">
                             <div class="col-md-8 mr-auto text-left">
                                 <h5 class="card-title text-muted">Basic</h5>
                                 <h6 class="card-price">$35.70<span class="period">/mo</span></h6>
                             </div>
                             <div class="col-md-4">
-                                <img src="https://i.pinimg.com/originals/2a/6c/78/2a6c78cbbd3d0b7e304bad157124aea2.jpg" class="img-fluid img-height mx-auto img-thumbnail"
+                                <img src="./assets/img/company%20(1).png" class="mx-auto img-thumbnail"
                                      style="height:4rem">
                             </div>
                         </div>
                         <hr>
                         <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>1GB Bandwith</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>10GB Diskspace</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>5 Domain Names</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>4 Email Address</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Private Support</li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample14"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">1GB Bandwith</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample14">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample13"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">10GB Diskspace</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample13">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample12"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">5 Domain Name</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample12">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample11"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">4 Email Address</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample11">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample10"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">Private Support</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample10">
+                                This is collapsed text
+                            </li>
                         </ul>
-                        <a href="#" class="btn btn-block btn-primary">Start With Basic</a>
+                        <a href="#" class="btn btn-block btn-primary text-white" style="background-color:blueviolet">Start With
+                            Basic</a>
                     </div>
                 </div>
             </div>
             <!-- Plus Tier -->
             <div class="col-lg-4 ">
                 <div class="card mb-5 mb-lg-0">
-                    <div class="card-body text-white" style="background-color: blueviolet">
+                    <div class="card-body text-white img-thumbnail" style="background-color: blueviolet">
                         <div class="row">
                             <div class="col-md-8 mr-auto text-left">
                                 <h5 class="card-title text-white">Pro</h5>
                                 <h6 class="card-price">$35.70<span class="period">/mo</span></h6>
                             </div>
                             <div class="col-md-4">
-                                <img src="data:image/png;base64,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" class="img-fluid img-height mx-auto img-thumbnail"
+                                <img src="./assets/img/shield.png" class="mx-auto img-thumbnail"
                                      style="height:4rem">
                             </div>
                         </div>
                         <hr>
                         <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Bandwith</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Diskspace</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>10 Domain Names</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>8 Email Address</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Private Support</li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample9"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">5GB Bandwith</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample9">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample8"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">50GB Diskspace</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample8">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample7"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">10 Domain Name</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample7">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample6"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">8 Email Address</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample6">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample5"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">Private Support</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample5">
+                                This is collapsed text
+                            </li>
                         </ul>
-                        <a href="#" class="btn btn-block btn-primary">Start With Pro</a>
+                        <a href="#" class="btn btn-block border-white text-white">Start With Pro</a>
                     </div>
                 </div>
             </div>
             <!-- Pro Tier -->
             <div class="col-lg-4">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body img-thumbnail">
                         <div class="row">
                             <div class="col-md-8 mr-auto text-left">
                                 <h5 class="card-title text-muted">Ultimate</h5>
                                 <h6 class="card-price">$55.70<span class="period">/mo</span></h6>
                             </div>
                             <div class="col-md-4">
-                                <img src="https://i.pinimg.com/originals/2a/6c/78/2a6c78cbbd3d0b7e304bad157124aea2.jpg  " class="img-fluid img-height mx-auto img-thumbnail"
+                                <img src="./assets/img/office-building%20(3).png" class="mx-auto img-thumbnail"
                                      style="height:4rem">
                             </div>
                         </div>
                         <hr>
                         <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>10GB Bandwith</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>500GB Diskspace</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>15 Domain Names</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>15 Email Address</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Private Support</li>
+                            <li class="d-flex justify-content-between ">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample4"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                </a>
+                                <span class="p-2 mr-auto">10GB Bandwith</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample4">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample15"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">500GB Diskspace</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample15">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample3"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">15 Domain Name</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample3">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample2"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">15 Email Address</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample2">
+                                This is collapsed text
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a class="collapsed"  data-toggle="collapse" href="#collapseExample1"><span class="fa-li "><i class="fas fa-angle-down p-2"></i></span></a>
+                                <span class="p-2 mr-auto">Private Support</span>
+                                <span><i class="fas fa-check ml-auto p-2"></i></span>
+                            </li>
+                            <li class="collapse" id="collapseExample1">
+                                This is collapsed text
+                            </li>
                         </ul>
-                        <a href="#" class="btn btn-block btn-primary">Start With Ultimate</a>
+                        <a href="#" class="btn btn-block text-white" style="background-color: blueviolet">Start With Ultimate</a>
                     </div>
                 </div>
             </div>
@@ -101,14 +207,8 @@
 </section>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
