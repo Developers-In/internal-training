@@ -1,0 +1,157 @@
+body {
+    background-color: #4ecdc4;
+    font-family: Arial;
+    color: #fff;
+}
+
+.container {
+    padding: 80px 120px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+#row1 {
+    display: flex
+}
+
+#col-1 {
+    width: 30%;
+
+    padding: 5px;
+}
+
+#navHeading {
+    margin: 0px;
+
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#col-2 {
+    width: 70%;
+
+    margin-left: 50px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(73, 172, 169, 1);
+    border-radius: 5px;
+}
+
+#navBar {
+    margin: 0;
+    padding: 0 20px;
+
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#navBar li {
+    float: left;
+}
+
+li a {
+    margin: 0 20px;
+    padding: 14px 16px;
+
+    display: block;
+
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(40, 100, 99);
+}
+
+#row2 {
+    margin-top: 60px;
+}
+
+#col-3 {
+    padding: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+form {
+    padding: 5px;
+}
+
+.formRow {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.formCol {
+    width: 45%;
+}
+
+label {
+    color: #18184c;
+    font-size: 23px;
+}
+
+.formCol input {
+    width: 100%;
+    height: 30px;
+
+    display: block;
+
+    border-radius: 3px;
+    border: 1px solid #4e4b4b;
+}
+
+.formCol input:focus {
+    outline: none;
+}
+
+.required {
+    display: inline;
+
+    color: red;
+}
+
+#descriptionDiv {
+    width: 100%;
+}
+
+#descriptionDiv textarea {
+    width: 100%;
+    display: block;
+
+    border-radius: 3px;
+    border: 1px solid #4e4b4b;
+}
+
+#descriptionDiv textarea:focus {
+    outline: none;
+}
+
+#buttonDiv {
+    text-align: right;
+}
+
+.btn {
+    padding: 10px 15px;
+
+    border-radius: 3px;
+    border: 1px solid #4e4b4b;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
