@@ -1,0 +1,41 @@
+.header {
+    border: 1px solid black;
+    height: 50px;
+}
+
+.sub-header {
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 200px;
+}
+
+.main-content {
+    display: flex;
+}
+
+.content-1 {
+    border: 1px solid black;
+    margin: 10px 10px 10px 0px;
+    height: 250px;
+    width: 33%;
+}
+
+.content-2 {
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 250px;
+    width: 33%;
+}
+
+.content-3 {
+    border: 1px solid black;
+    margin: 10px 0px 10px 10px;
+    height: 250px;
+    width: 33%;
+}
+
+.footer {
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 100px;
+}
