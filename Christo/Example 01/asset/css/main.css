@@ -1,0 +1,46 @@
+.container {
+    border: 1px solid black;
+    padding: 20px 15px 10px 15px;
+}
+
+.header {
+    border: 1px solid black;
+    height: 50px;
+}
+
+.sub-header {
+    border: 1px solid black;
+    margin: 10px 0 10px 0;
+    height: 200px;
+}
+
+.main-content {
+    display: flex;
+}
+
+.content-1 {
+    border: 1px solid black;
+    margin: 10px 10px 10px 0;
+    width: 33%;
+    height: 250px;
+}
+
+.content-2 {
+    border: 1px solid black;
+    margin: 10px 0 0 0;
+    width: 33%;
+    height: 250px;
+}
+
+.content-3 {
+    border: 1px solid black;
+    margin: 10px 0 10px 10px;
+    width: 33%;
+    height: 250px;
+}
+
+.footer {
+    border: 1px solid black;
+    margin: 10px 0 0 0;
+    height: 100px;
+}

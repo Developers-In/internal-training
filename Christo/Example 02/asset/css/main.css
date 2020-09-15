@@ -1,0 +1,23 @@
+.main-container {
+    border: 1px solid black;
+}
+
+.header {
+    border: 1px solid black;
+    height: 60px;
+}
+
+.sub-header {
+    border: 1px solid black;
+    height: 200px;
+}
+
+.content {
+    border: 1px solid black;
+    height: 250px;
+}
+
+.footer {
+    border: 1px solid black;
+    height: 100px;
+}
