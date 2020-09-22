@@ -12,112 +12,120 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+<div class="bg-info">
+
+    <!--header text area begin-->
     <div class="bg-info">
-
-        <!--header text area begin-->
-        <div class="bg-info">
-            <h2 class="text-uppercase text-center text-white pb-3">Simple Contact Form</h2>
-        </div>
-        <!--header text area end-->
-
-        <!--    form area begin-->
-        <div class="card bg-light w-50 mx-auto">
-            <div class="card-body">
-                <form class="bg-light p-3" action="" name = "myForm" onsubmit = "return(validate());">
-                    <div class="form-group text-danger"><label for="first-name">FIRST NAME</label>
-                        <input type="text" class="form-control" id="first-name" placeholder="FIRST NAME" name="first_name"
-                               required>
-                    </div>
-                    <div class="form-group text-danger"><label for="LAST NAME">LAST NAME</label>
-                        <input type="text" class="form-control" id="LAST NAME" placeholder="LAST NAME" name="LAST_NAME"
-                               required>
-                    </div>
-                    <div class="form-group text-danger"><label for="EMAIL">EMAIL</label>
-                        <input type="text" class="form-control" id="EMAIL" placeholder="EMAIL" name="EMAIL" required>
-                    </div>
-                    <div class="form-group text-danger"><label for="PHONE NUMBER">PHONE NUMBER</label>
-                        <input type="text" class="form-control" id="PHONE NUMBER" placeholder="PHONE NUMBER"
-                               name="PHONE_NUMBER"
-                               required>
-                    </div>
-                    <div class="form-group text-danger"><label for="CITY">CITY</label>
-                        <input type="text" class="form-control" id="CITY" placeholder="CITY" name="CITY" required>
-                    </div>
-                    <div class="form-group text-danger">
-                        <label for="MESSAGE">MESSAGE</label>
-                        <textarea class="form-control" id="MESSAGE" rows="3" placeholder="MESSAGE" name="MESSAGE"></textarea>
-                    </div>
-                    <button class="text-center bg-info w-100 text-white">Send</button>
-                </form>
-            </div>
-        </div>
-        <!--    form area end-->
-
+        <h2 class="text-uppercase text-center text-white pb-3">Simple Contact Form</h2>
     </div>
+    <!--header text area end-->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    <!--    form area begin-->
+    <div class="card bg-light w-50 mx-auto">
+        <div class="card-body">
+            <form class="bg-light p-3" action="" name="myForm" onsubmit="return(validate());" novalidate>
+                <div class="form-group text-danger"><label for="first-name">FIRST NAME</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="FIRST NAME" name="first_name"
+                           required>
+                </div>
+                <div class="form-group text-danger"><label for="LAST NAME">LAST NAME</label>
+                    <input type="text" class="form-control" id="LAST NAME" placeholder="LAST NAME" name="LAST_NAME"
+                           required>
+                </div>
+                <div class="form-group text-danger"><label for="EMAIL">EMAIL</label>
+                    <input type="text" class="form-control" id="EMAIL" placeholder="EMAIL" name="EMAIL" required>
+                </div>
+                <div class="form-group text-danger"><label for="PHONE NUMBER">PHONE NUMBER</label>
+                    <input type="text" class="form-control" id="PHONE NUMBER" placeholder="PHONE NUMBER"
+                           name="PHONE_NUMBER"
+                           required>
+                </div>
+                <div class="form-group text-danger"><label for="CITY">CITY</label>
+                    <input type="text" class="form-control" id="CITY" placeholder="CITY" name="CITY" required>
+                </div>
+                <div class="form-group text-danger">
+                    <label for="MESSAGE">MESSAGE</label>
+                    <textarea class="form-control" id="MESSAGE" rows="3" placeholder="MESSAGE"
+                              name="MESSAGE"></textarea>
+                </div>
+                <button class="text-center bg-info w-100 text-white">Send</button>
+            </form>
+        </div>
+    </div>
+    <!--    form area end-->
 
-    <!--    java script area begin-->
-    <script type = "text/javascript">
-        function validate() {
+</div>
 
-           // alert( document.myForm.first_name.value);
-           // return false;
-            if( document.myForm.first_name.value === "" ) {
-                alert( "Please provide your first name!" );
-                document.myForm.Name.focus() ;
-                return false;
-            }
-            if( document.myForm.LAST_NAME.value === "" ) {
-                alert( "Please provide your Last name!" );
-                document.myForm.LAST_NAME.focus() ;
-                return false;
-            }
-            if( document.myForm.EMAIL.value === "" ) {
-                alert( "Please provide your Email!" );
-                document.myForm.EMAIL.focus() ;
-                return false;
-            }
-            if( document.myForm.PHONE_NUMBER.value === "" ) {
-                alert( "Please provide your Phone number!" );
-                document.myForm.PHONE_NUMBER.focus() ;
-                return false;
-            }
-            if( document.myForm.CITY.value === "" ) {
-                alert( "Please provide your City!" );
-                document.myForm.CITY.focus() ;
-                return false;
-            }
-            if( document.myForm.MESSAGE.value === "" ) {
-                alert( "Please provide your City!" );
-                document.myForm.MESSAGE.focus() ;
-                return false;
-            }
-            return( true );
-            function validateEmail() {
-                var emailID = document.myForm.EMail.value;
-                atpos = emailID.indexOf("@");
-                dotpos = emailID.lastIndexOf(".");
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-                if (atpos < 1 || ( dotpos - atpos < 2 )) {
-                    alert("Please enter correct email ID")
-                    document.myForm.EMail.focus() ;
-                    return false;
-                }
-                return( true );
-            }
+<!--    java script area begin-->
+<script type="text/javascript">
+    function validate() {
+        //console.log("sample ");
+        // alert( document.myForm.first_name.value);
+        // return false;
+        if (document.myForm.first_name.value === "") {
+            alert("Please provide your first name!");
+            document.myForm.Name.focus();
+            return false;
         }
-    </script>
-    <!--    java script area end-->
+        if (document.myForm.LAST_NAME.value === "") {
+            alert("Please provide your Last name!");
+            document.myForm.LAST_NAME.focus();
+            return false;
+        }
+        if (document.myForm.EMAIL.value === "") {
+            alert("Please provide your Email!");
+            document.myForm.EMAIL.focus();
+            return false;
+        }
+        if (document.myForm.EMAIL.value !== "") {
+            alert("Please provide valid Email !");
+            return validateEmail();
+        }
+        if (document.myForm.PHONE_NUMBER.value === "") {
+            alert("Please provide your Phone number!");
+            document.myForm.PHONE_NUMBER.focus();
+            return false;
+        }
+        if (document.myForm.CITY.value === "") {
+            alert("Please provide your City!");
+            document.myForm.CITY.focus();
+            return false;
+        }
+        if (document.myForm.MESSAGE.value === "") {
+            alert("Please provide your City!");
+            document.myForm.MESSAGE.focus();
+            return false;
+        }
+
+        return (true);
+    }
+
+    function validateEmail() {
+        var emailID = document.myForm.EMAIL.value;
+        console.log(emailID);
+        atpos = emailID.indexOf("@");
+        dotpos = emailID.lastIndexOf(".");
+
+        if (atpos < 1 || (dotpos - atpos < 2)) {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus();
+            return false;
+        }
+        return (true);
+    }
+</script>
+<!--    java script area end-->
 </body>
 </html>
